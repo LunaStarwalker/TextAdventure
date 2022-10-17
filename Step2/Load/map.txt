@@ -1,0 +1,3 @@
+##              hauntedroom  ##
+shadowfigure    mainentrance skeletonroom
+
