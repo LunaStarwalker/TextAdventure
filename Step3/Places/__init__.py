@@ -1,1 +1,1 @@
-from .skeletonroom import SkeletonRoom
+from .shadowfigure import ShadowFigure

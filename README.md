@@ -22,27 +22,34 @@ https://eblong.com/zarf/zweb/dreamhold/
 
 ## Chart Drawing
 
-> #### Flow chart
-https://en.wikipedia.org/wiki/Flowchart#Common_symbols
+> ### **Flow chart**
+>> *Do it yourself*: Draw a flow chart for the game "text adventure" in the folder Step1.
+>> https://en.wikipedia.org/wiki/Flowchart#Common_symbols
 
-> #### Class diagram
+> ### **Class diagram**
+>> *Do it yourself*: read through the UML tutuorial https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/ and try answer the following questions:
+>> - What is UML class diagram ? What can UML class diagram visualize ?
+>> - What are the three main components in the UML Class notation
+>> - This tutorial https://www.gleek.io/blog/class-diagram-arrows.html introduced several relations between classes. In our project, we are going to use the following ones. Make sure that you understand the meaning of these relations
+>>>- Inheritance
+>>>- Association
+>>>- Aggregation
+>>>- Composition
+>> - Analyse the "class diagram for an ATM system" in this article, https://www.lucidchart.com/pages/uml-class-diagram. Describe the relations between the classes **Bank**, **Customer**, **ATM**, **Account**, **ATM transactions**, **Current Account** and **Saving Account**
 
-> *Do it yourself: look through the UML tutuorial above and try to find the answer of following questions:
+## Some improvement ideas ?
 
-> - What is UML class diagram ? What can UML class diagram visualize ?
 
-> - What are the three main components in the UML Class notation
 
-> - This tutorial introduced several relations between classes. In our class, we are going to use the following ones
+## Home Work
+> - Change the codes of text adventure in Step1 into object oriented. You can follow the steps:
+>> 1. Make a list of all the involved objects in the game. 
+>> 2. Add the attributes and operations (methods) to each object (class) 
+>> 3. Draw the UML class diagram. 
+>> 4. Implement according to the UML
+> - Make a sketch (in words or drawing or both) of your own text adventure game. It must include at least four scenes, two characters, some inventories to collect and a win condition.
 
-> -- Inheritance
-
-> -- Association
-
-> -- Aggregation
-
-> -- Composition
-
+> In both homework parts, you can choose to work on your own fiction or just simply extend the given one in Step1.
 
 
 

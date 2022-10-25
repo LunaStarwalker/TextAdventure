@@ -1,9 +1,6 @@
 # TextAdventure
-In this folder, the implementation of game textadventure further optimized based on the version in Step2. The following features are added and considered 
+In this folder, the implementation of game textadventure is modified as object oriented style. The following features are added and considered during the design
 
+> Classes UML
 
-> Design principles
-
-> Design pattern
-
-> State Machine 
+> Classes inheritance

@@ -1,10 +1,12 @@
-from Load import loadmap
+from Rooms import hauntedroom, mainentrance, skeletonroom
+from Places import shadowfigure
 
 class MyAdventureGame():
     def __init__(self):
-        self.loadmap = loadmap.LoadMap()
-        self.gamemap = self.loadmap.game_map
-        print("map loaded")
+        self.hauntedroom = hauntedroom.HauntedRoom()
+        self.mainentrance = mainentrance.MainEntrance()
+        self.skeletonroom = skeletonroom.SkeletonRoom()
+        self.shadowfigure = shadowfigure.ShadowFigure()
     def run(self):
         while True:
             print("Welcome to the Adventure Game!")
@@ -14,7 +16,7 @@ class MyAdventureGame():
             print("Let's start with your name: ")
             name = input()
             print("Good luck, " +name+ ".")
-            self.gamemap.location_map['mainentrance'].run()
+            self
             
             
           
