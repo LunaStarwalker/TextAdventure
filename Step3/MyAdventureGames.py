@@ -1,18 +1,17 @@
 
 from transitions import Machine
 import GameStateMachine
-import game
 import state_info
 class MyAdventureGame():
     
     def __init__(self):
         # Initialize
-        self.game = game.Game()
-        self.machine = Machine(self.game, 
+        self.game_state_machine = GameStateMachine.GameMachine()
+        self.machine = Machine(self.game_state_machine, 
                                states= state_info.states, 
                                transitions=state_info.transitions, 
                                initial='mainentrance')
-        self.game_state_machine = GameStateMachine.GameMachine(self.game)
+        
 
     def run(self):
         print("Welcome to the Adventure Game!")

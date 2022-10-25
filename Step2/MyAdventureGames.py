@@ -1,10 +1,9 @@
 from Load import loadmap
 
-
 class MyAdventureGame():
     def __init__(self):
         self.loadmap = loadmap.LoadMap()
-        self.gamestatemachine = 
+        self.gamemap = self.loadmap.game_map
         print("map loaded")
     def run(self):
         while True:
@@ -15,9 +14,12 @@ class MyAdventureGame():
             print("Let's start with your name: ")
             name = input()
             print("Good luck, " +name+ ".")
-            #self.map.current_scene.run()
-        
+            self.gamemap.location_map['mainentrance'].run()
+            
+            
+          
 
 if __name__ == "__main__":
     mygame = MyAdventureGame()
-    #mygame.run()
+    mygame.run()
+    

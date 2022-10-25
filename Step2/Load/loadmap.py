@@ -18,24 +18,18 @@ class LoadMap:
         __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
         self.entity_list = open(os.path.join(__location__, map_file)).read().split()
-        print(self.entity_list)
         self.build_map()
         self.print_map()
     
     def print_map(self):
+        print("Game map is built!")
         for key in self.game_map.location_map:
             entity = self.game_map.location_map[key]
-            print( entity, "west neighbour: ", entity.west)
-            print("esat neighbour: ", entity.east)
-            print("south neighbour: ", entity.south)
-            print("north neighbour: ", entity.north)
-
-
-    def map_func(self, classid):
-        if classid != "##":
-            return place_class_dict[classid]()
-        else:
-            return None  
+            print( entity )
+            print( "----west neighbour: ", entity.west)
+            print( "----esat neighbour: ", entity.east)
+            print( "----south neighbour: ", entity.south)
+            print( "----north neighbour: ", entity.north)
 
     def add_neighbour(self, i,j, entity):
         if(i>0 ):
@@ -52,7 +46,10 @@ class LoadMap:
             entity.east = neighbour if neighbour!=None else None
                     
     def build_map(self):
-        self.game_class_array = np.array(list(map(self.map_func, self.entity_list)))\
+        map_func =  lambda classid: \
+                    place_class_dict[classid]() if classid!='##' else None
+    
+        self.game_class_array = np.array(list(map(map_func, self.entity_list)))\
                                   .reshape((map_height, map_width))
 
         for (i,j), entity in np.ndenumerate(self.game_class_array):

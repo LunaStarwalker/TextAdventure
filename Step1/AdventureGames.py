@@ -87,7 +87,6 @@ def showShadowFigure():
     else:
       print("Please enter a valid option.")
 
-
 def introScene():
   directions = ["left","right","forward"]
   print("You are at a crossroads, and you can choose to go down any of the four hallways. Where would you like to go?")
