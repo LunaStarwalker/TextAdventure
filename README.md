@@ -30,8 +30,9 @@ https://eblong.com/zarf/zweb/dreamhold/
 >> *Do it yourself*: read through the UML tutuorial https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/ and try answer the following questions:
 >> - What is UML class diagram ? What can UML class diagram visualize ?
 >> - What are the three main components in the UML Class notation
->> - This tutorial https://www.gleek.io/blog/class-diagram-arrows.html introduced several relations between classes. In our project, we are going to use the following ones. Make sure that you understand the meaning of these relations
->>>- Inheritance
+>> - This tutorial https://www.gleek.io/blog/class-diagram-arrows.html introduced several relations between classes. In our project, we are going to use the following ones. Make sure that you understand the meaning of these relations.
+can you make an example of each relation for our game text adventure ?
+>>>- Generalization
 >>>- Association
 >>>- Aggregation
 >>>- Composition
