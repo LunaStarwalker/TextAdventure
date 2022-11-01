@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from .room import Room
 
 class HauntedRoom(Room):
@@ -8,9 +9,11 @@ class HauntedRoom(Room):
     def run(self):
         directions = ["south"]
         print("You hear strange voices. You think you have awoken some of the dead. Where would you like to go?")
-        userInput = ""
+        userInput=""
         while userInput not in directions:
-            print("It is wall, you cannot go further, try some other directions.")
-            self.get_neighbour(userInput).run()
+            print("looks like you can only go back")
+            userInput = input()
+        self.get_neighbour(userInput).run()
+        return NULL
 
     

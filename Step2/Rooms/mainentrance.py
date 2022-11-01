@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from .room import Room
 
 class MainEntrance(Room):
@@ -12,7 +13,7 @@ class MainEntrance(Room):
         while userInput not in directions:
             print("Options: north/east/west")
             userInput = input()
-            self.neighbour_map[userInput].run()
-
+        self.neighbour_map[userInput].run()
+        return True
     
     

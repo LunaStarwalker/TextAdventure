@@ -20,7 +20,8 @@ class MyAdventureGame():
         self.__create_location_map()
 
     def run(self):
-        while True:
+        isFinished = False
+        while not isFinished:
             print("Welcome to the Adventure Game!")
             print("As an avid traveller, you have decided to visit the Catacombs of Paris.")
             print("However, during your exploration, you find yourself lost.")
@@ -28,11 +29,8 @@ class MyAdventureGame():
             print("Let's start with your name: ")
             name = input()
             print("Good luck, " +name+ ".")
-            self.mainentrance.run()
+            isFinished = self.mainentrance.run()
             
-            
-          
-
 if __name__ == "__main__":
     mygame = MyAdventureGame()
     mygame.run()

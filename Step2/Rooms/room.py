@@ -13,8 +13,6 @@ class Room:
     def __init__(self, **kwargs):
         self.neighbour_map={}
         
-        
-    
     def buide_room(self):
         pass
 

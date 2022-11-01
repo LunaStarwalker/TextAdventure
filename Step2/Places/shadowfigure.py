@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from numpy import mat
 
 from .place import Place
@@ -18,4 +19,6 @@ class ShadowFigure(Place):
                     self.neighbour_map["east"].run()
                 case "fight":
                     anotherinput=False
-                    print("well done!")
+                    print("Well done! you completed the game!")
+                    anotherinput = False
+        return NULL
