@@ -31,7 +31,7 @@ https://eblong.com/zarf/zweb/dreamhold/
 >> - What is UML class diagram ? What can UML class diagram visualize ?
 >> - What are the three main components in the UML Class notation
 >> - This tutorial https://www.gleek.io/blog/class-diagram-arrows.html introduced several relations between classes. In our project, we are going to use the following ones. Make sure that you understand the meaning of these relations.
-can you make an example of each relation for our game text adventure ?
+can you find examples of each relation from the game text adventure ?
 >>>- Generalization
 >>>- Association
 >>>- Aggregation
@@ -47,10 +47,12 @@ can you make an example of each relation for our game text adventure ?
 >> 1. Make a list of all the involved objects in the game. 
 >> 2. Add the attributes and operations (methods) to each object (class) 
 >> 3. Draw the UML class diagram. 
->> 4. Implement according to the UML
-> - Make a sketch (in words or drawing or both) of your own text adventure game. It must include at least four scenes, two characters, some inventories to collect and a win condition.
+>> 4. Implement according to the UML (Optional, can wait til next time)
 
-> In both homework parts, you can choose to work on your own fiction or just simply extend the given one in Step1.
+Or if you'd rather make you own story
+> - Make a sketch (in words or drawing or both) of your own text adventure game. It must include at least four scenes, two characters, some inventories to collect and a win condition.
+> - Follow the 1,2,3,4 from above
+
 
 
 

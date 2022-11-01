@@ -6,21 +6,13 @@ class MainEntrance(Room):
     def __str__(self):
         return "mainentrance"
     def run(self, ):
-        directions = ["left","right","forward"]
-        print("You are at a crossroads, and you can choose to go down any of the four hallways. Where would you like to go?")
+        directions = ["north","east", "west"]
+        print("You are at a crossroads, there is no way going back. Where would you like to go?")
         userInput = ""
         while userInput not in directions:
-            print("Options: left/right/backward/forward")
+            print("Options: north/east/west")
             userInput = input()
-            if userInput == "left":
-                showShadowFigure()
-            elif userInput == "right":
-                showSkeletons()
-            elif userInput == "forward":
-                hauntedRoom()
-            elif userInput == "backward":
-                print("You find that this door opens into a wall.")
-            else: 
-                print("Please enter a valid option.")
+            self.neighbour_map[userInput].run()
+
     
     
